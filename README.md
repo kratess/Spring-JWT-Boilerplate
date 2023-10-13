@@ -8,6 +8,7 @@ Boilerplate for Spring authentication server using JWT. Feel free to use this bo
 * Java 21
 * Spring Boot 3.1.4
 * jjwt 0.11.2
+* Maven
 * lombok
 * PostgreSQL (by default)
 
@@ -15,8 +16,9 @@ Boilerplate for Spring authentication server using JWT. Feel free to use this bo
 
 1. Clone or download this project into your machine.
 2. Open it with your favourite IDE
-3. Edit application.properties file with the data to access database and key signature for jwt
-4. Start the project
+3. Install dependencies using maven
+4. Edit application.properties file with the data to access database and key signature for jwt
+5. Start the project
 
 ## Documentation
 
