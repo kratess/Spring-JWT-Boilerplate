@@ -71,7 +71,7 @@ Contains all the JPA repositories that integrates with the database.
 
 Contains all the services. In this repository you will find the jwt service and user service.
 
-#### Controler
+#### Controller
 
 Here are stored all the controllers of the application.
 
