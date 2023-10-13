@@ -33,7 +33,7 @@ public class AuthenticationController {
         try {
             return ResponseHandler.generateResponse(authenticationService.signin(request));
         } catch (AuthenticationException ex) {
-            return ResponseHandler.generateErrorResponse(HttpStatus.CONFLICT, "Email or password invalid");
+            return ResponseHandler.generateErrorResponse(HttpStatus.UNAUTHORIZED, "Email or password invalid");
         }
     }
 
