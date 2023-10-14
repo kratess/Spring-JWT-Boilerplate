@@ -86,7 +86,7 @@ Here are stored all the controllers of the application.
 
 #### Util
 
-Provides the *StringUtil* with the sole method of toPascalCase (from underscore names like HttpStatus are) and *HibernateNamingStrategy* that extends the *CamelCaseToUnderscoresNamingStrategy* so that all the names follow the strategy to snake_case expect ID that must be all uppercase.
+Provides the *HibernateNamingStrategy* that extends the *CamelCaseToUnderscoresNamingStrategy* so that all the names follow the strategy to snake_case expect ID that must be all uppercase.
 
 ## Contributing
 
