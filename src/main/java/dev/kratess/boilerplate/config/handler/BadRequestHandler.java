@@ -30,4 +30,9 @@ public class BadRequestHandler {
 
         return ResponseHandler.generateErrorResponse(HttpStatus.BAD_REQUEST, fieldErrors);
     }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<Object> handleGeneralException(Exception ex) {
+        return ResponseHandler.generateErrorResponse(HttpStatus.BAD_REQUEST, "Your request cannot be executed");
+    }
 }
