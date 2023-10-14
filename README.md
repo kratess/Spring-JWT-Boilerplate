@@ -37,6 +37,15 @@ or
 
 ```
 {
+    "error": "Internal Server Error",
+    "status": 500
+}
+```
+
+or
+
+```
+{
     "error": "Unauthorized",
     "message": "You don't have the required role to perform this action",
     "status": 401
