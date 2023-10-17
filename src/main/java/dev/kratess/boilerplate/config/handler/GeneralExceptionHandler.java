@@ -17,9 +17,4 @@ public class GeneralExceptionHandler extends ResponseEntityExceptionHandler {
         if (httpStatus == null) return ResponseHandler.generateErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR);
         return ResponseHandler.generateErrorResponse(httpStatus, ((ProblemDetail) body).getDetail());
     }
-
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity<Object> handleGeneralException(Exception ex) {
-        return ResponseHandler.generateErrorResponse(HttpStatus.BAD_REQUEST, "Your request cannot be executed");
-    }
 }
